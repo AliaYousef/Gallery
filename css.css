@@ -2,52 +2,6 @@
     box-sizing: border-box;
 }
 
-.img1 {
-    width: 29%;
-    /* height: 75%; */
-    margin-right: 15px;
-    margin-top: 10px;
-    float: left;
-    border: 3px solid white;
-}
-
-.img2 {
-    width: 29%;
-    /* height: 75%; */
-    margin-right: 15px;
-    margin-top: 10px;
-    float: left;
-    border: 3px solid white;
-}
-
-.img3 {
-   
-   width: 40%;
-    display: block;
-    margin:40px auto;
-}
-
-.added {
-    z-index: 1;
-    position: absolute;
-    
-    top: 10%;
-    
-}
-.add{
-    width: 100%;
-}
-.row1 {
-    display: block;
-    margin: auto;
-}
-
-.row2 {
-
-    display: block;
-    margin: auto;
-}
-
 .con {
     display: block;
     width: 100%;
@@ -55,6 +9,45 @@
     padding: 25px 15%;
     background-color: gray;
     height: 100%;
+}
+
+.img1 {
+    margin-right: 13%;
+}
+
+.img2,
+.img1 {
+    opacity: 0.7;
+    max-width: 23%;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    border: 5px solid white;
+}
+
+.row1,
+.row2 {
+    padding-left: 45px;
+    display: block;
+    margin: auto;
+}
+
+.img3 {
+    display: block;
+    margin: 40px auto;
+}
+
+.added {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+}
+
+img:hover {
+    opacity: 1;
+    margin-bottom: 0px;
+    margin-right: 0pxpx;
+    margin-top: 0px;
 }
 
 .row1::after {
@@ -68,26 +61,81 @@
     clear: both;
     display: table;
 }
-.newAdd{
+
+.show::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.newAdd {
+    margin: -65px auto 65px auto;
+    padding-top: 65px;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.712);;
-    height: 100%;
+    background-color: rgba(128, 128, 128, 0.712);
+    ;
+    height: 150%;
 }
-.close{
-    z-index: 2;
+
+.close {
+    z-index: 3;
     position: absolute;
-    right: 30%;
-    top: 18%;
-    
+    right: 36%;
+    top: 16%;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
 }
-.hidden{
-    display: none;
-}
-a{
+
+a {
     text-decoration: none;
 }
+
+.first {
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.second {
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    float: left;
+
+}
+
+.show {
+    visibility: hidden;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.next {
+    left: 25%;
+}
+.prev {
+    right: 25%;
+}
 @media only screen and (max-width: 850px) {
-    .con {  
-    padding: 25px 5%;
+    .con {
+        padding: 25px 5%;
     }
-  }
+}
